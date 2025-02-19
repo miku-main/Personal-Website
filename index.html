@@ -35,11 +35,56 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Impedit voluptas asperiores nam modi vel eligendi quasi esse nihil. 
-                    Veniam sed repellat iure! Dolore modi repellat molestiae harum in, exercitationem eum.</p>
+                Impedit voluptas asperiores nam modi vel eligendi quasi esse nihil. 
+                Veniam sed repellat iure! Dolore modi repellat molestiae harum in, exercitationem eum.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Something 1</li>
+                        <li><span>App Development</span><br>Something 2</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>ABC</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Webby</span><br>Something 1</li>
+                        <li><span>Apppy</span><br>Something 2</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>DEF</span><br>Designing Web/App Interfaces</li>
+                        <li><span>DEF WEB</span><br>Something 1</li>
+                        <li><span>DEF WEB</span><br>Something 2</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
 </body>
 </html>
