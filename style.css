@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #080808;
+    background: #000000;
     color: #fff;
 }
 
@@ -54,7 +54,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #00ddc0;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -201,8 +201,8 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-/*----------projects----------*/
-#projects {
+/*----------research----------*/
+#research {
     padding: 50px 0;
 }
 
