@@ -6,8 +6,14 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9ac36e37c5.js" crossorigin="anonymous"></script>
+
+    <!-- SEO + Meta -->
+    <meta name="description" content="Gui Sen Zou - Software Developer Portfolio showcasing AI and full-stack projects.">
+    <meta name="keywords" content="Gui Sen Zou, UGA, Software Engineer, Portfolio, Projects, AI, Web Development, JavaScript, Python">
+    <meta name="author" content="Gui Sen Zou">
 </head>
 <body>
+<!-- ---------- Header ---------- -->
 <div id="header">
     <div class="container">
         <nav>
@@ -22,13 +28,17 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
-            <p>Software Developer</p>
+            <p>Software Developer & AI</p>
             <h1>Hi, I'm <span>Gui Sen</span><br>Zou From UGA</h1>
+            <p class="tagline">Turning complex problems into creative code.</p>
+            <a href="#research" class="btn hero-btn">View My Projects</a>
         </div>
     </div>
 </div>
-<!----------about---------->
+
+<!-- ---------- About ---------- -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -37,42 +47,43 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p> 
-                    Hello, my name is Gui Sen Zou and 
-                    I am a student at the University of Georgia. I am pursuing a bachelor's degree on Computer Science, 
-                    expected to graduate in Dec 2025. I am passionate about using technology to solve real-world problems and wanting to create changes.
-                    I am drawn to the logic and structure of computing, but what drives me most is the opportunity to make a positive impact,
-                    whether by improving access, increasing efficiency, or building systems that serve people better. 
-                    I value curiosity, integrity, and thoughtful design, and I am always eager to learn, adapt, and grow through new challenges.
-                    For me, Computer Science is more than just a field of study, it is a way to think critically, act responsibly, 
-                    and shape the future with intention.
+                <p>
+                    I'm <strong>Gui Sen Zou</strong>, a Computer Science student at the <strong>University of Georgia</strong> (graduating Dec 2025).
+                    I'm passionate about building software that solves real-world problems through thoughtful design and technology.
+                    What drives me most is creating solutions that make life simpler, smarter, and more accessible.
+                    I just really like coding.
                 </p>
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('clubs')">Clubs/Extra</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('program')">Programming languages</p>
+                    <p class="tab-links" onclick="opentab('program')">Programming Languages</p>
                 </div>
+
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Web & Software Development</span><br>HTML/CSS, Node.js, React, MongoDB, Git, Visual Studio Code, NetBeans, SCRUM</li>
-                        <li><span>Data & Technical Tools</span><br>Excel, Matlab, SQL, problem-solving/debugging</li>
+                        <li><span>Data & Technical Tools</span><br>Excel, Matlab, SQL, Problem-solving/Debugging</li>
                         <li><span>Game & Interactive Media Development</span><br>Unity, Ren'Py, Blender, Figma</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="clubs">
                     <ul>
-                        <li><span>Society for Cybersecurity (SCS)</span><br>Learning about network security, cryptography, and incident response through lectures and training sessions.</li>
-                        <li><span>Association for Computing Machinery (ACM)</span><br>Solving LeetCode problems, learning about problem-solving techniques, and practice technical interview questions.</li>
-                        <li><span>The UGA CyberArch</span><br>Basic Cybersecurity training, MITx course, and Google Cybersecurity course.</li>
+                        <li><span>Society for Cybersecurity (SCS)</span><br>Learning about network security, cryptography, and incident response.</li>
+                        <li><span>Association for Computing Machinery (ACM)</span><br>Solving LeetCode problems and practicing technical interviews.</li>
+                        <li><span>The UGA CyberArch</span><br>Basic Cybersecurity training via MITx and Google Cybersecurity courses.</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="education">
                     <ul>
                         <li><span>Jan 2023 - Dec 2025</span><br>University of Georgia</li>
                         <li><span>Aug 2022 - Dec 2022</span><br>Georgia State University</li>
                     </ul>
                 </div>
+
                 <div class="tab-contents" id="program">
                     <ul>
                         <li><span>Python</span></li>
@@ -86,68 +97,114 @@
         </div>
     </div>
 </div>
-<!----------services---------->
+
+<!-- ---------- Services ---------- -->
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-brands fa-youtube"></i>
-                <h2>Youtube Channel</h2>
-                <p>This is my YouTube channel, where I post computer science related materials</p>
-                <a href="https://www.youtube.com/@miku-main">Learn more</a>
+                <h2>YouTube Channel</h2>
+                <p>My YouTube channel, where I post computer science tutorials and coding materials.</p>
+                <a href="https://www.youtube.com/@miku-main" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-linkedin"></i>
-                <h2>Linkedin</h2>
-                <p>This is my Linkedin profile, where I make connection and expand my network</p>
-                <a href="https://www.linkedin.com/in/gui-sen-zou/">Learn more</a>
+                <h2>LinkedIn</h2>
+                <p>My LinkedIn profile for networking and professional connections.</p>
+                <a href="https://www.linkedin.com/in/gui-sen-zou/" target="_blank">Learn more</a>
             </div>
             <div>
                 <i class="fa-brands fa-github"></i>
                 <h2>GitHub</h2>
-                <p>This is my GitHub page, where I create projects and public them</p>
-                <a href="#">Learn more</a>
+                <p>My GitHub portfolio, showcasing open-source projects and experiments.</p>
+                <a href="https://github.com/miku-main" target="_blank">Learn more</a>
             </div>
         </div>
     </div>
 </div>
-<!----------Research---------->
+
+<!-- ---------- Research / Projects ---------- -->
 <div id="research">
     <div class="container">
         <h1 class="sub-title">Research</h1>
         <div class="work-list">
+
+            <!-- Projects -->
             <div class="work">
-                <img src="images/mascot.png" alt="Work 1">
+                <img src="images/AlgoViz.png" alt="AlgoViz Project">
                 <div class="layer">
-                    <h3>CashCourse</h3>
-                    <p>A fun and interactive game that helps you master finance concepts.</p>
-                    <a href="https://github.com/miku-main/Hackathon"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>AlgoViz</h3>
+                    <p>An interactive visualizer for classic data structures and algorithms.</p>
+                    <p class="stack">Tech Stack: HTML, CSS, JavaScript</p>
+                    <a href="https://miku-main.github.io/DSA-Viz/" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/work-1.png" alt="Work 1">
+                <img src="images/ReciTrack.png" alt="ReciTrack Project">
                 <div class="layer">
-                    <h3>Belly</h3>
-                    <p>Belly is a social media platform designed 
-                        for food and cooking enthusiasts to encourage the cross 
-                        communication and engagement of various content, concentrating on recipes.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>ReciTrack</h3>
+                    <p>Python + Streamlit app that scans receipts, extracts data via OCR, and categorizes expenses.</p>
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
+
             <div class="work">
-                <img src="images/work-1.png" alt="Work 1">
+                <img src="images/work-1.png" alt="Who is More Likely Project">
                 <div class="layer">
-                    <h3>Who is more likely to</h3>
-                    <p>A fun game where players answer questions or prompts by deciding which person in the group is more likely to do something.</p>
-                    <a href="https://github.com/miku-main/Who-is-more-likely-to"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>HeadCheck AI</h3>
+                    <p>A simple project that trains a baseline text classifier to distinguish real vs fake news using the popular Kaggle dataset (two CSV files: True.csv and Fake.csv).</p>
+                    <a href="https://github.com/miku-main/AI-Fake-News-Detector" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hidden Projects -->
+            <div class="work hidden">
+                <img src="images/work-1.png" alt="DSA Visualizer">
+                <div class="layer">
+                    <h3>Who is More Likely To</h3>
+                    <p>A multiplayer game like Kahoot built with Node.js and Socket.io.</p>
+                    <a href="https://github.com/miku-main/Who-is-more-likely-to" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="work hidden">
+                <img src="images/work-1.png" alt="AI Fake News Detector">
+                <div class="layer">
+                    <h3>AI Fake News Detector</h3>
+                    <p>Machine learning model that detects fake vs real news using scikit-learn and Kaggle data.</p>
+                    <a href="https://github.com/miku-main/ai-fake-news-detector" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="work hidden">
+                <img src="images/work-1.png" alt="Smart Receipt Scanner">
+                <div class="layer">
+                    <h3>Smart Receipt Scanner</h3>
+                    <p>OCR-powered app using Streamlit to scan receipts and auto-categorize expenses.</p>
+                    <a href="https://github.com/miku-main/smart-receipt-scanner" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="javascript:void(0);" class="btn" id="seeMoreBtn">See more</a>
     </div>
 </div>
-<!----------contact---------->
+
+<!-- ---------- Contact ---------- -->
 <div id="contact">
     <div class="container">
         <div class="row">
@@ -163,11 +220,12 @@
                 </div>
                 <a href="images/GuiSenZou.pdf" download class="btn btn2">Download Resume</a>
             </div>
+
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <form name="submit-to-google-sheet" autocomplete="on">
+                    <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
+                    <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message" aria-label="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
@@ -175,58 +233,62 @@
         </div>
     </div>
     <div class="copyright">
-        <p>copyright © Gui Sen Zou</p>
+        <p>© Gui Sen Zou</p>
     </div>
 </div>
-<script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<!-- ---------- Scripts ---------- -->
+<script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
+        for (let tablink of tablinks) tablink.classList.remove("active-link");
+        for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-</script>
 
-<script>
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
 
-    var sidemenu = document.getElementById("sidemenu");
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeBNa9XglFJq3fxiQPNtu2bDAf1O2DBd1QDFp-2ovUs4zYa1CtcqyhN29lx2BKDULR/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px"
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxeBNa9XglFJq3fxiQPNtu2bDAf1O2DBd1QDFp-2ovUs4zYa1CtcqyhN29lx2BKDULR/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message Sent!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
+            msg.innerHTML = "Message Sent!";
+            setTimeout(() => msg.innerHTML = "", 5000);
+            form.reset();
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        .catch(error => console.error('Error!', error.message));
+    });
 
+    // See More Toggle
+    const seeMoreBtn = document.getElementById("seeMoreBtn");
+    const hiddenProjects = document.querySelectorAll(".work.hidden");
+    let expanded = false;
+
+    seeMoreBtn.addEventListener("click", () => {
+        expanded = !expanded;
+        hiddenProjects.forEach(project => {
+            if (expanded) {
+                project.classList.add("show");
+                project.style.display = "block";
+                setTimeout(() => (project.style.opacity = 1), 100);
+            } else {
+                project.classList.remove("show");
+                project.style.opacity = 0;
+                setTimeout(() => (project.style.display = "none"), 400);
+            }
+        });
+        seeMoreBtn.textContent = expanded ? "See less" : "See more";
+        if (!expanded) seeMoreBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+</script>
 </body>
 </html>

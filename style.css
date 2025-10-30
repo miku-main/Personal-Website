@@ -190,10 +190,17 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    columns: #fff;
-    font-size: 12px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
     margin-top: 20px;
     display: inline-block;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.services-list div a:hover {
+    color: #000;
+    transform: translateY(-3px);
 }
 
 .services-list div:hover {
@@ -217,6 +224,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    transition: box-shadow 0.4s;
 }
 
 .work img {
@@ -263,12 +271,23 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
+.work:hover {
+    box-shadow: 0 0 25px rgba(14, 234, 223, 0.3);
+}
+
 .work:hover img {
     transform: scale(1.1);
 }
 
 .work:hover .layer {
     height: 100%;
+}
+
+.stack {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #d4d4d4;
+    font-style: italic;
 }
 
 .btn {
@@ -284,7 +303,36 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #0eeadf;
+    background: linear-gradient(90deg, #00ddc0,#0eeadf);
+    box-shadow: 0 0 15px #0eeadf;
+    transform: scale(1.03);
+}
+
+.extra-projects {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.extra-projects.show {
+    max-height: 1000px;
+    opacity: 1;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /*----------contact----------*/
@@ -357,7 +405,7 @@ form .btn2 {
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20pxs;
+    margin-top: 20px;
 }
 
 .copyright i {
@@ -375,10 +423,16 @@ nav .fa-solid{
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 70%;
         font-size: 16px;
+        text-align: center;
     }
     
+    .hero-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
     .header-text h1 {
         font-size: 30px;
     }
@@ -389,7 +443,7 @@ nav .fa-solid{
     }
 
     nav ul {
-        background: #ff004f;
+        background: #111;
         position: fixed;
         top: 0;
         right: -200px;
@@ -446,4 +500,28 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+.header-text .tagline {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+.hero-btn {
+    margin-top: 25px;
+    background: linear-gradient(90deg, #00ddc0, #0eeadf);
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(14, 234, 223, 0.6);
 }
